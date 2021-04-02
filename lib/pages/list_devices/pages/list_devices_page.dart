@@ -34,7 +34,7 @@ class _ListDevicesPageState extends State<ListDevicesPage> {
     setState(() {
       searching = true;
     });
-    await flutterBlueInstance.startScan(timeout: Duration(seconds: 5));
+    await flutterBlueInstance.startScan(timeout: Duration(seconds: 10));
     await _populateDeviceInfo();
     setState(() {
       searching = false;
